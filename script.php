@@ -22,6 +22,7 @@ class plgSystemLocaltimeInstallerScript
 	 * Constructor
 	 *
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 */
 	public function __construct(JAdapterInstance $adapter) {}
 
@@ -30,6 +31,7 @@ class plgSystemLocaltimeInstallerScript
 	 *
 	 * @param   string  $route  Which action is happening (install|uninstall|discover_install|update)
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 *
 	 * @return  boolean  True on success
 	 */
@@ -40,6 +42,7 @@ class plgSystemLocaltimeInstallerScript
 	 *
 	 * @param   string  $route  Which action is happening (install|uninstall|discover_install|update)
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 *
 	 * @return  boolean  True on success
 	 */
@@ -49,6 +52,7 @@ class plgSystemLocaltimeInstallerScript
 	 * Called on installation
 	 *
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 *
 	 * @return  boolean  True on success
 	 */
@@ -58,6 +62,7 @@ class plgSystemLocaltimeInstallerScript
 	 * Called on update
 	 *
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 *
 	 * @return  boolean  True on success
 	 */
@@ -67,6 +72,7 @@ class plgSystemLocaltimeInstallerScript
 	 * Called on uninstallation
 	 *
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
+	 * @since   1.0
 	 */
 	public function uninstall(JAdapterInstance $adapter) {}
 }
