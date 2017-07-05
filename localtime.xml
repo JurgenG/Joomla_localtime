@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_LOCALTIME</name>
+	<creationDate>5/07/17</creationDate>
+	<author>Jurgen Gaeremyn</author>
+	<authorEmail>jurgen@sjette.be</authorEmail>
+	<authorUrl>https://sjette.be</authorUrl>
+	<copyright>Copyright (C) 2017 Jurgen Gaeremyn. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>0.0.1</version>
+	<description>PLG_LOCALTIME_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_localtime.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_localtime.sys.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.plg_system_localtime.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.plg_system_localtime.sys.ini</language>
+    </languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="localtime">localtime.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+						name="format"
+						type="text"
+						label="MOD_TESTMODULE_FORMAT_LABEL"
+						description="MOD_TESTMODULE_FORMAT_DESCRIPTION"
+						default="H:iO"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="localtime">https://sjette.be/extensions/plg_localtime.xml</server>
+	</updateservers>
+</extension>
